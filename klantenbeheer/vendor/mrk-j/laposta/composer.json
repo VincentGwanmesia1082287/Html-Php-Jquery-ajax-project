@@ -1,0 +1,42 @@
+{
+    "name": "mrk-j/laposta",
+    "description": "An easy way to work with the Laposta API",
+    "keywords": [
+        "mrkj",
+        "laposta"
+    ],
+    "homepage": "https://github.com/mrk-j/laposta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark",
+            "email": "github@markj.nl",
+            "homepage": "https://github.com/mrk-j",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrkj\\Laposta\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mrkj\\Laposta\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
